@@ -13,10 +13,6 @@ const process = [
   { title: "Deliver", text: "Final delivery in the right format for your project.", image: deliver },
 ];
 
-function Arrow({ diagonal = false }: { diagonal?: boolean }) {
-  return <span aria-hidden="true">{diagonal ? "↗" : "→"}</span>;
-}
-
 function InstagramIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -53,21 +49,12 @@ function Logo({ small = false }: { small?: boolean }) {
   );
 }
 
-function GradientButton({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a className="gradient-button" href={href}>
-      <span>{children}</span>
-      <Arrow />
-    </a>
-  );
-}
-
 export default function Home() {
   return (
     <main id="top">
       <section className="hero" aria-label="Introduction">
         <video className="hero__video" autoPlay loop muted playsInline preload="auto" aria-label="Cinematic portrait at night">
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/hero.mov" type="video/mp4" />
         </video>
         <div className="hero__shade" />
 
@@ -76,14 +63,14 @@ export default function Home() {
           <nav className="desktop-nav" aria-label="Main navigation">
             <a href="#work">Reel</a>
             <a href="#process">Process</a>
-            <a href="#contact">Contact</a>
+            <a className="contact-nav-button" href="#contact">Contact</a>
           </nav>
           <details className="mobile-menu">
             <summary aria-label="Open menu"><i /><i /></summary>
             <nav aria-label="Mobile navigation">
               <a href="#work">Reel</a>
               <a href="#process">Process</a>
-              <a href="#contact">Contact</a>
+              <a className="contact-nav-button" href="#contact">Contact</a>
             </nav>
           </details>
         </header>
@@ -125,17 +112,44 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact section shell" id="contact" aria-labelledby="contact-title">
-        <div className="contact__intro">
-          <h2 id="contact-title">Have a project<br />in mind?</h2>
-          <p>I&apos;m always open to new collaborations.<br />Let&apos;s create something great together.</p>
-          <GradientButton href="mailto:hello@stevenmurillo.com">Get in touch</GradientButton>
+      <section className="contact section" id="contact" aria-labelledby="contact-title">
+        <div className="contact__inner shell">
+          <div className="contact__intro">
+            <h2 id="contact-title">Let&apos;s talk about<br />your <span>project</span></h2>
+            <p>Have an idea in mind? Tell me what you need and I&apos;ll get back to you as soon as possible. I&apos;d love to hear about your next project and help bring it to life through color.</p>
+
+            <address className="contact__details">
+              <a href="mailto:hello@stevenmurillo.com">
+                <span className="contact-icon"><MailIcon /></span>
+                <span><small>Email</small><strong>hello@stevenmurillo.com</strong></span>
+              </a>
+              <a href="https://www.instagram.com/murillozgz/">
+                <span className="contact-icon"><InstagramIcon /></span>
+                <span><small>Instagram</small><strong>@murillozgz</strong></span>
+              </a>
+              <p>
+                <span className="contact-icon"><PinIcon /></span>
+                <span><small>Location</small><strong>Spain · Available worldwide</strong></span>
+              </p>
+            </address>
+          </div>
+
+          <form className="contact-form" action="mailto:hello@stevenmurillo.com" method="post" encType="text/plain">
+            <div className="form-field">
+              <label htmlFor="contact-name">Name</label>
+              <input id="contact-name" name="Name" type="text" placeholder="Your name" autoComplete="name" required />
+            </div>
+            <div className="form-field">
+              <label htmlFor="contact-email">Email</label>
+              <input id="contact-email" name="Email" type="email" placeholder="you@email.com" autoComplete="email" required />
+            </div>
+            <div className="form-field">
+              <label htmlFor="contact-message">Message</label>
+              <textarea id="contact-message" name="Message" placeholder="Tell me about your project..." rows={6} required />
+            </div>
+            <button className="contact-form__submit" type="submit">Start a project <span aria-hidden="true">↗</span></button>
+          </form>
         </div>
-        <address className="contact__details">
-          <a href="mailto:hello@stevenmurillo.com"><span className="contact-icon"><MailIcon /></span>hello@stevenmurillo.com</a>
-          <a href="https://www.instagram.com/murillozgz/"><span className="contact-icon"><InstagramIcon /></span>@murillozgz</a>
-          <p><span className="contact-icon"><PinIcon /></span>Spain <i>•</i> Available worldwide</p>
-        </address>
       </section>
 
       <footer className="footer shell">
