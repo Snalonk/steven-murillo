@@ -5,6 +5,7 @@ import understand from "@/public/process/understand.png";
 import grade from "@/public/process/grade.png";
 import refine from "@/public/process/refine.png";
 import deliver from "@/public/process/deliver.png";
+import { ContactForm } from "./contact-form";
 
 const process = [
   { title: "Understand", text: "We analyze the footage, references and creative goals.", image: understand },
@@ -135,21 +136,7 @@ export default function Home() {
             </address>
           </div>
 
-          <form className="contact-form" action="mailto:smurilloprod@gmail.com" method="post" encType="text/plain">
-            <div className="form-field">
-              <label htmlFor="contact-name">Name</label>
-              <input id="contact-name" name="Name" type="text" placeholder="Your name" autoComplete="name" required />
-            </div>
-            <div className="form-field">
-              <label htmlFor="contact-email">Email</label>
-              <input id="contact-email" name="Email" type="email" placeholder="you@email.com" autoComplete="email" required />
-            </div>
-            <div className="form-field">
-              <label htmlFor="contact-message">Message</label>
-              <textarea id="contact-message" name="Message" placeholder="Tell me about your project..." rows={6} required />
-            </div>
-            <button className="contact-form__submit" type="submit">Start a project <span aria-hidden="true">↗</span></button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
