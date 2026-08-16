@@ -51,7 +51,6 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
 
 .hero { position: relative; min-height: 100svh; height: 100svh; overflow: hidden; background: #010101; }
 .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 61% center; }
-.hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, #010101 0%, rgba(1,1,1,.95) 21%, rgba(1,1,1,.45) 45%, rgba(1,1,1,.04) 70%), linear-gradient(0deg, rgba(0,0,0,.9), transparent 23%); }
 .gradient-button { position: relative; display: inline-flex; min-width: 190px; height: 52px; padding: 1px; align-items: center; justify-content: center; gap: 17px; background: linear-gradient(100deg, var(--yellow), var(--cyan), var(--magenta)); font-size: 11px; letter-spacing: .13em; text-transform: uppercase; transition: filter .25s ease, transform .25s ease; }
 .gradient-button::before { content: ""; position: absolute; inset: 1px; background: #050505; }
 .gradient-button span { position: relative; z-index: 1; }
@@ -145,7 +144,6 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
 
 @media (max-width: 1100px) {
   .shell { width: min(100% - 56px, 1480px); }
-  .hero__shade { background: linear-gradient(90deg,#010101 0%,rgba(1,1,1,.93) 25%,rgba(1,1,1,.25) 72%),linear-gradient(0deg,rgba(0,0,0,.9),transparent 24%); }
   .process-grid { gap: 10px; }
   .contact__inner { grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr); gap: 45px; }
   .about { grid-template-columns: 48% 52%; }
@@ -173,7 +171,6 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
   .mobile-menu nav .contact-nav-button { margin-top: 6px; border: 1px solid; border-image: linear-gradient(115deg, #27d5eb 0%, #43e7a2 20%, #f2e944 40%, #ffad2e 59%, #ff3b5d 79%, #c928e8 100%) 1; background: transparent; }
   .hero { min-height: 100svh; height: 100svh; }
   .hero__video { object-position: 66% center; }
-  .hero__shade { background: linear-gradient(90deg,rgba(0,0,0,.95),rgba(0,0,0,.2)),linear-gradient(0deg,rgba(0,0,0,.96) 0%,transparent 36%,rgba(0,0,0,.15)); }
   .reel .section-heading { margin-bottom: 30px; }
   .process-section { min-height: 0; }
   .process-section__backdrop { inset: 62% 0 0; }

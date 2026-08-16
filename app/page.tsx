@@ -56,8 +56,6 @@ export default function Home() {
         <video className="hero__video" autoPlay loop muted playsInline preload="auto" aria-label="Cinematic portrait at night">
           <source src="/hero.mov" type="video/mp4" />
         </video>
-        <div className="hero__shade" />
-
         <header className="site-header shell">
           <Logo />
           <nav className="desktop-nav" aria-label="Main navigation">
