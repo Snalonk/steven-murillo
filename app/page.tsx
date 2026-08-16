@@ -1,25 +1,10 @@
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import aboutImage from "@/public/aboutme/hero.png";
 import logoImage from "@/public/logo.jpeg";
-import costaBrava from "@/public/projects/costabrava.png";
-import theWait from "@/public/projects/thewait.png";
-import beyondLimit from "@/public/projects/beyondlimit.png";
-import insideLight from "@/public/projects/insidelight.png";
-import nocturne from "@/public/projects/nocturne.png";
-import fuga from "@/public/projects/fuga.png";
 import understand from "@/public/process/understand.png";
 import grade from "@/public/process/grade.png";
 import refine from "@/public/process/refine.png";
 import deliver from "@/public/process/deliver.png";
-
-const projects: { title: string; category: string; image: StaticImageData }[] = [
-  { title: "Costa Brava", category: "Short film", image: costaBrava },
-  { title: "The Wait", category: "Cinematic", image: theWait },
-  { title: "Beyond the Limit", category: "Commercial", image: beyondLimit },
-  { title: "Inside Light", category: "Documentary", image: insideLight },
-  { title: "Nocturne", category: "Music video", image: nocturne },
-  { title: "Fuga", category: "Short film", image: fuga },
-];
 
 const process = [
   { title: "Understand", text: "We analyze the footage, references and creative goals.", image: understand },
@@ -107,30 +92,16 @@ export default function Home() {
 
       </section>
 
-      <section className="work section shell" id="work" aria-labelledby="work-title">
-        <div className="section-heading section-heading--row">
-          <div>
-            <p className="eyebrow">Selected work</p>
-            <h2 id="work-title">Recent projects</h2>
-          </div>
-          <a className="text-link text-link--small" href="#project-grid">View all work <Arrow /></a>
+      <section className="reel section shell" id="work" aria-labelledby="reel-title">
+        <div className="section-heading">
+          <p className="eyebrow">Selected work</p>
+          <h2 id="reel-title">Reel</h2>
         </div>
-
-        <div className="project-grid" id="project-grid">
-          {projects.map((project) => (
-            <article className="project" key={project.title}>
-              <a href="#contact" aria-label={`${project.title} — ${project.category}`}>
-                <div className="project__image">
-                  <Image src={project.image} alt="" fill sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw" />
-                </div>
-                <h3>{project.title}</h3>
-                <p>{project.category}</p>
-              </a>
-            </article>
-          ))}
-        </div>
-        <div className="work__footer">
-          <a className="underlined-link" href="#project-grid">View all work <Arrow /></a>
+        <div className="reel-video-frame">
+          <video className="reel-video" controls playsInline preload="metadata" poster="/projects/reel_poster.png">
+            <source src="/projects/reel.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de vídeo.
+          </video>
         </div>
       </section>
 
