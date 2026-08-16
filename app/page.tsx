@@ -117,9 +117,9 @@ export default function Home() {
             <p>Have an idea in mind? Tell me what you need and I&apos;ll get back to you as soon as possible. I&apos;d love to hear about your next project and help bring it to life through color.</p>
 
             <address className="contact__details">
-              <a href="mailto:hello@stevenmurillo.com">
+              <a href="mailto:smurilloprod@gmail.com">
                 <span className="contact-icon"><MailIcon /></span>
-                <span><small>Email</small><strong>hello@stevenmurillo.com</strong></span>
+                <span><small>Email</small><strong>smurilloprod@gmail.com</strong></span>
               </a>
               <a href="https://www.instagram.com/murillozgz/">
                 <span className="contact-icon"><InstagramIcon /></span>
@@ -127,12 +127,12 @@ export default function Home() {
               </a>
               <p>
                 <span className="contact-icon"><PinIcon /></span>
-                <span><small>Location</small><strong>Spain · Available worldwide</strong></span>
+                <span><small>Location</small><strong>Zaragoza, Spain</strong></span>
               </p>
             </address>
           </div>
 
-          <form className="contact-form" action="mailto:hello@stevenmurillo.com" method="post" encType="text/plain">
+          <form className="contact-form" action="mailto:smurilloprod@gmail.com" method="post" encType="text/plain">
             <div className="form-field">
               <label htmlFor="contact-name">Name</label>
               <input id="contact-name" name="Name" type="text" placeholder="Your name" autoComplete="name" required />
