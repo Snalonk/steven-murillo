@@ -77,6 +77,7 @@ export default function Home() {
 
       <section className="reel section shell" id="work" aria-labelledby="reel-title">
         <div className="section-heading">
+          <p className="eyebrow">Featured work</p>
           <h2 id="reel-title">Reel</h2>
         </div>
         <div className="reel-video-frame">
@@ -93,6 +94,7 @@ export default function Home() {
         </div>
         <div className="shell process-section__inner">
           <div className="section-heading">
+            <p className="eyebrow">How I work</p>
             <h2 id="process-title">Process</h2>
           </div>
 
@@ -113,6 +115,7 @@ export default function Home() {
       <section className="contact section" id="contact" aria-labelledby="contact-title">
         <div className="contact__inner shell">
           <div className="contact__intro">
+            <p className="eyebrow">Contact</p>
             <h2 id="contact-title">Let&apos;s talk about<br />your <span>project</span></h2>
             <p>Have an idea in mind? Tell me what you need and I&apos;ll get back to you as soon as possible. I&apos;d love to hear about your next project and help bring it to life through color.</p>
 
