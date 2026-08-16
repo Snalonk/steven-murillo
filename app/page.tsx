@@ -93,10 +93,6 @@ export default function Home() {
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
           </nav>
-          <div className="social-nav">
-            <a href="https://instagram.com/sm.colorist" aria-label="Instagram"><InstagramIcon /></a>
-            <a href="mailto:hello@stevenmurillo.com" aria-label="Email"><MailIcon /></a>
-          </div>
           <details className="mobile-menu">
             <summary aria-label="Open menu"><i /><i /></summary>
             <nav aria-label="Mobile navigation">
