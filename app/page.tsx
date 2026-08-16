@@ -94,7 +94,6 @@ export default function Home() {
 
       <section className="reel section shell" id="work" aria-labelledby="reel-title">
         <div className="section-heading">
-          <p className="eyebrow">Selected work</p>
           <h2 id="reel-title">Reel</h2>
         </div>
         <div className="reel-video-frame">
@@ -111,8 +110,7 @@ export default function Home() {
         </div>
         <div className="shell process-section__inner">
           <div className="section-heading">
-            <p className="eyebrow">My process</p>
-            <h2 id="process-title">From vision to final frame</h2>
+            <h2 id="process-title">Process</h2>
             <p>Every project is unique. I work closely with directors, DPs and production teams to craft the perfect look, enhancing the emotion and visual storytelling of each image.</p>
           </div>
 
@@ -128,7 +126,6 @@ export default function Home() {
           </div>
 
           <div className="tools">
-            <p className="eyebrow">Tools of the trade</p>
             <div className="tools__logos" aria-label="Color grading tools">
               <span className="resolve-mark"><i /><b>DaVinci</b><small>RESOLVE</small></span>
               <span className="tool-wordmark dolby">DOLBY<small>VISION</small></span>
@@ -142,7 +139,6 @@ export default function Home() {
       <section className="about" id="about" aria-labelledby="about-title">
         <div className="about__content section">
           <div>
-            <p className="eyebrow">About me</p>
             <h2 id="about-title">Colorist &amp; visual<br />storyteller</h2>
             <p>I&apos;m a colorist with a passion for cinematic storytelling. With years of experience in post-production, I help filmmakers and brands bring their vision to life through color.</p>
             <GradientButton href="#contact">More about me</GradientButton>
@@ -155,14 +151,13 @@ export default function Home() {
 
       <section className="contact section shell" id="contact" aria-labelledby="contact-title">
         <div className="contact__intro">
-          <p className="eyebrow">Let&apos;s work together</p>
           <h2 id="contact-title">Have a project<br />in mind?</h2>
           <p>I&apos;m always open to new collaborations.<br />Let&apos;s create something great together.</p>
           <GradientButton href="mailto:hello@stevenmurillo.com">Get in touch</GradientButton>
         </div>
         <address className="contact__details">
           <a href="mailto:hello@stevenmurillo.com"><span className="contact-icon"><MailIcon /></span>hello@stevenmurillo.com</a>
-          <a href="https://instagram.com/sm.colorist"><span className="contact-icon"><InstagramIcon /></span>@sm.colorist</a>
+          <a href="https://www.instagram.com/murillozgz/"><span className="contact-icon"><InstagramIcon /></span>@murillozgz</a>
           <p><span className="contact-icon"><PinIcon /></span>Spain <i>•</i> Available worldwide</p>
         </address>
       </section>
