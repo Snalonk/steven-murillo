@@ -1,5 +1,4 @@
 import Image, { type StaticImageData } from "next/image";
-import heroImage from "@/public/hero.png";
 import aboutImage from "@/public/aboutme/hero.png";
 import logoImage from "@/public/logo.jpeg";
 import costaBrava from "@/public/projects/costabrava.png";
@@ -81,8 +80,10 @@ function GradientButton({ href, children }: { href: string; children: React.Reac
 export default function Home() {
   return (
     <main id="top">
-      <section className="hero" aria-labelledby="hero-title">
-        <Image className="hero__image" src={heroImage} alt="Cinematic portrait at night" fill priority sizes="100vw" />
+      <section className="hero" aria-label="Introduction">
+        <video className="hero__video" autoPlay loop muted playsInline preload="auto" aria-label="Cinematic portrait at night">
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
         <div className="hero__shade" />
 
         <header className="site-header shell">
@@ -106,7 +107,6 @@ export default function Home() {
 
         <div className="hero__content shell">
           <p className="eyebrow hero__eyebrow">Colorist · Visual storyteller</p>
-          <h1 id="hero-title">Color that<br />tells the story</h1>
           <p className="hero__intro">Professional color grading for film,<br className="desktop-only" /> commercials and branded content.</p>
           <div className="hero__actions">
             <GradientButton href="#work">View work</GradientButton>
