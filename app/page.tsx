@@ -75,7 +75,6 @@ export default function Home() {
           <Logo />
           <nav className="desktop-nav" aria-label="Main navigation">
             <a href="#work">Reel</a>
-            <a href="#about">About</a>
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -83,7 +82,6 @@ export default function Home() {
             <summary aria-label="Open menu"><i /><i /></summary>
             <nav aria-label="Mobile navigation">
               <a href="#work">Reel</a>
-              <a href="#about">About</a>
               <a href="#process">Process</a>
               <a href="#contact">Contact</a>
             </nav>
@@ -111,7 +109,6 @@ export default function Home() {
         <div className="shell process-section__inner">
           <div className="section-heading">
             <h2 id="process-title">Process</h2>
-            <p>Every project is unique. I work closely with directors, DPs and production teams to craft the perfect look, enhancing the emotion and visual storytelling of each image.</p>
           </div>
 
           <div className="process-grid">
@@ -125,27 +122,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="tools">
-            <div className="tools__logos" aria-label="Color grading tools">
-              <span className="resolve-mark"><i /><b>DaVinci</b><small>RESOLVE</small></span>
-              <span className="tool-wordmark dolby">DOLBY<small>VISION</small></span>
-              <span className="tool-wordmark baselight">BASELIGHT</span>
-              <span className="tool-wordmark calman">◈ calman</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="about" id="about" aria-labelledby="about-title">
-        <div className="about__content section">
-          <div>
-            <h2 id="about-title">Colorist &amp; visual<br />storyteller</h2>
-            <p>I&apos;m a colorist with a passion for cinematic storytelling. With years of experience in post-production, I help filmmakers and brands bring their vision to life through color.</p>
-            <GradientButton href="#contact">More about me</GradientButton>
-          </div>
-        </div>
-        <div className="about__image">
-          <Image src={aboutImage} alt="Colorist working at a professional grading suite" fill sizes="(max-width: 800px) 100vw, 55vw" />
         </div>
       </section>
 
@@ -165,7 +141,7 @@ export default function Home() {
       <footer className="footer shell">
         <Logo small />
         <nav aria-label="Footer navigation">
-          <a href="#work">Reel</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a>
+          <a href="#work">Reel</a><a href="#process">Process</a><a href="#contact">Contact</a>
         </nav>
         <p>© 2026 Steven Murillo Colorist<br />All rights reserved.</p>
         <a className="back-to-top" href="#top" aria-label="Back to top">↑</a>
