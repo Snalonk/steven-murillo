@@ -44,13 +44,9 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
 .icon-dot { fill: #bd51ad; stroke: none !important; }
 .mobile-menu { display: none; }
 
-.hero { position: relative; min-height: 900px; height: 100svh; max-height: 1120px; overflow: hidden; background: #010101; }
+.hero { position: relative; min-height: 100svh; height: 100svh; overflow: hidden; background: #010101; }
 .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 61% center; }
 .hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, #010101 0%, rgba(1,1,1,.95) 21%, rgba(1,1,1,.45) 45%, rgba(1,1,1,.04) 70%), linear-gradient(0deg, rgba(0,0,0,.9), transparent 23%); }
-.hero__content { position: relative; z-index: 2; display: flex; min-height: 100%; flex-direction: column; justify-content: center; padding-top: 55px; }
-.hero__eyebrow { display: none; }
-.hero__intro { margin-bottom: 38px; color: #b5b5b7; font-size: 17px; line-height: 1.7; }
-.hero__actions { display: flex; align-items: center; gap: 44px; }
 .gradient-button { position: relative; display: inline-flex; min-width: 190px; height: 52px; padding: 1px; align-items: center; justify-content: center; gap: 17px; background: linear-gradient(100deg, var(--yellow), var(--cyan), var(--magenta)); font-size: 11px; letter-spacing: .13em; text-transform: uppercase; transition: filter .25s ease, transform .25s ease; }
 .gradient-button::before { content: ""; position: absolute; inset: 1px; background: #050505; }
 .gradient-button span { position: relative; z-index: 1; }
@@ -60,10 +56,6 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
 .text-link span { font-size: 16px; transition: transform .2s ease; }
 .text-link:hover span { transform: translateX(4px); }
 .text-link--small { padding-bottom: 8px; }
-.hero__bottom { position: absolute; z-index: 2; inset: auto 0 43px; display: flex; justify-content: flex-start; align-items: flex-end; }
-.availability { position: relative; margin: 0; padding-left: 15px; color: #c6c6c6; font-size: 11px; line-height: 1.55; }
-.availability i { position: absolute; left: 0; top: 5px; width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 10px var(--cyan); }
-.availability span { color: #7e7e80; }
 
 .work { border-bottom: 1px solid var(--line); }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 43px 20px; margin-top: 45px; }
@@ -123,7 +115,6 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
 
 @media (max-width: 1100px) {
   .shell { width: min(100% - 56px, 1480px); }
-  .hero { min-height: 760px; }
   .hero__shade { background: linear-gradient(90deg,#010101 0%,rgba(1,1,1,.93) 25%,rgba(1,1,1,.25) 72%),linear-gradient(0deg,rgba(0,0,0,.9),transparent 24%); }
   .process-grid { gap: 10px; }
   .about { grid-template-columns: 48% 52%; }
@@ -148,17 +139,9 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
   .mobile-menu[open] summary i:last-child { transform: translateY(-4px) rotate(-45deg); }
   .mobile-menu nav { position: absolute; top: 53px; right: 0; display: grid; width: 170px; padding: 18px; gap: 0; background: rgba(6,6,6,.96); border: 1px solid var(--line); backdrop-filter: blur(18px); }
   .mobile-menu nav a { padding: 12px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
-  .hero { min-height: 780px; height: 100svh; }
+  .hero { min-height: 100svh; height: 100svh; }
   .hero__video { object-position: 66% center; }
   .hero__shade { background: linear-gradient(90deg,rgba(0,0,0,.95),rgba(0,0,0,.2)),linear-gradient(0deg,rgba(0,0,0,.96) 0%,transparent 36%,rgba(0,0,0,.15)); }
-  .hero__content { justify-content: flex-end; padding-bottom: 185px; }
-  .hero__eyebrow { display: block; }
-  .hero__intro { margin-bottom: 28px; font-size: 15px; }
-  .hero__actions { gap: 24px; }
-  .gradient-button { min-width: 155px; height: 48px; font-size: 10px; }
-  .hero__bottom { bottom: 25px; align-items: flex-end; }
-  .availability { font-size: 9px; }
-  .desktop-only { display: none; }
   .section-heading--row { align-items: start; }
   .section-heading--row > .text-link { display: none; }
   .project-grid { grid-template-columns: 1fr; gap: 34px; margin-top: 34px; }

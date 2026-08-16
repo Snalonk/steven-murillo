@@ -105,18 +105,6 @@ export default function Home() {
           </details>
         </header>
 
-        <div className="hero__content shell">
-          <p className="eyebrow hero__eyebrow">Colorist · Visual storyteller</p>
-          <p className="hero__intro">Professional color grading for film,<br className="desktop-only" /> commercials and branded content.</p>
-          <div className="hero__actions">
-            <GradientButton href="#work">View work</GradientButton>
-            <a className="text-link" href="#contact">Contact me <Arrow /></a>
-          </div>
-        </div>
-
-        <div className="hero__bottom shell">
-          <p className="availability"><i />Colorist based in Spain<br /><span>Available for remote &amp; in-person projects</span></p>
-        </div>
       </section>
 
       <section className="work section shell" id="work" aria-labelledby="work-title">
