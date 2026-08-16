@@ -120,9 +120,6 @@ export default function Home() {
 
         <div className="hero__bottom shell">
           <p className="availability"><i />Colorist based in Spain<br /><span>Available for remote &amp; in-person projects</span></p>
-          <div className="camera-logos" aria-label="Camera formats">
-            <span>ARRI</span><span>RED</span><span>Blackmagic</span><span>SONY</span><span>Canon</span>
-          </div>
         </div>
       </section>
 
