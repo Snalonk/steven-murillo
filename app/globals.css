@@ -33,7 +33,7 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
 .logo { position: relative; z-index: 2; display: block; width: 84px; height: 84px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 28px rgba(89, 235, 218, .06); }
 .logo img { width: 100%; height: 100%; object-fit: cover; }
 .logo--small { width: 60px; height: 60px; }
-.site-header { position: fixed; z-index: 50; inset: 0 0 auto; display: grid; grid-template-columns: auto 1fr; align-items: center; padding-block: 14px; background: rgba(3,3,3,.72); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.site-header { position: absolute; z-index: 5; inset: 32px 0 auto; display: grid; grid-template-columns: auto 1fr; align-items: center; }
 .desktop-nav, .footer nav { display: flex; align-items: center; gap: clamp(28px, 3.3vw, 54px); }
 .desktop-nav a, .footer nav a { position: relative; letter-spacing: .13em; text-transform: uppercase; }
 .desktop-nav { justify-self: end; }
@@ -159,7 +159,7 @@ h2 { margin-bottom: 22px; font-size: clamp(28px, 2.4vw, 40px); line-height: 1.12
   .section { padding-block: 76px; }
   .eyebrow { margin-bottom: 14px; font-size: 10px; }
   h2 { font-size: 28px; }
-  .site-header { top: 0; grid-template-columns: 1fr auto; padding-block: 12px; }
+  .site-header { top: 20px; grid-template-columns: 1fr auto; }
   .logo { width: 58px; height: 58px; }
   .desktop-nav, .social-nav { display: none; }
   .mobile-menu { display: block; justify-self: end; position: relative; z-index: 20; }
