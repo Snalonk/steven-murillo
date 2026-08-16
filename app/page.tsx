@@ -89,7 +89,7 @@ export default function Home() {
         <header className="site-header shell">
           <Logo />
           <nav className="desktop-nav" aria-label="Main navigation">
-            <a href="#work">Work</a>
+            <a href="#work">Reel</a>
             <a href="#about">About</a>
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
@@ -97,7 +97,7 @@ export default function Home() {
           <details className="mobile-menu">
             <summary aria-label="Open menu"><i /><i /></summary>
             <nav aria-label="Mobile navigation">
-              <a href="#work">Work</a>
+              <a href="#work">Reel</a>
               <a href="#about">About</a>
               <a href="#process">Process</a>
               <a href="#contact">Contact</a>
@@ -199,7 +199,7 @@ export default function Home() {
       <footer className="footer shell">
         <Logo small />
         <nav aria-label="Footer navigation">
-          <a href="#work">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a>
+          <a href="#work">Reel</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a>
         </nav>
         <p>© 2026 Steven Murillo Colorist<br />All rights reserved.</p>
         <a className="back-to-top" href="#top" aria-label="Back to top">↑</a>
